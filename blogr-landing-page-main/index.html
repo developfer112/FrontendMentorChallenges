@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./static/styles/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+
+
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+
+  <main>
+    <section id="blogr-hero" class="blogr-hero">
+      <nav class="nav">
+        <div class="logo">
+          Blogr
+        </div>
+        <div class="blogr-menu-responsive-icon" >
+          <a href="javascript:void(0);" class="icon" onclick="menuResponsive()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+
+        <div class="bolgr-dropdown-menu">
+          <ul class="blogr-dropdown-hover">
+            <li>Product&nbsp;<i class="fas fa-chevron-down"></i>
+                <div class="blogr-dropdown-invisible">
+                  <ul>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
+                </div>
+            </li>
+            <li>Company&nbsp;<i class="fas fa-chevron-down"></i>
+              <div class="blogr-dropdown-invisible-2">
+                <ul>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </li>
+            <li>Connect&nbsp;<i class="fas fa-chevron-down"></i>
+              <div class="blogr-dropdown-invisible-3">
+                <ul>
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        
+        
+        <div class="blogr-login">
+          <button class="blogr-login--button-login">Login</button>
+          <button class="blogr-login--button-sign-up">Sign up</button>
+        </div>
+      </nav>
+
+      <div class="responsive" id="topnav">
+
+        <div class="blogr-dropdown-hover-responsive">
+          <ul>
+            <li>Product&nbsp;<a href="javascript:void(0);" class="icon" onclick="liResponsive1()"><i class="fas fa-chevron-down"></i></a>
+                <div class="liHidden" id="liResponsive">
+                    <a>Overview</a>
+                    <a>Pricing</a>
+                    <a>Marketplace</a>
+                    <a>Features</a>
+                    <a>Integrations</a>
+                </div>
+            </li>
+            <li>Company&nbsp;<a href="javascript:void(0);" class="icon" onclick="liResponsive2()"><i class="fas fa-chevron-down"></i></a>
+              <div class="liHidden" id="liResponsive2">
+                  <a>About</a>
+                  <a>Team</a>
+                  <a>Blog</a>
+                  <a>Careers</a>
+              </div>
+            </li>
+            <li>Connect&nbsp;<a href="javascript:void(0);" class="icon" onclick="liResponsive3()"><i class="fas fa-chevron-down"></i></a>
+              <div class="liHidden" id="liResponsive3">
+                  <a>Contact</a>
+                  <a>Newsletter</a>
+                  <a>LinkedIn</a>
+              </div>
+            </li>
+        </ul>
+
+        <hr class="blogr-divider-responsive"/>
+
+        <div class="blogr-login-responsive">
+          <button class="blogr-login--button-login-responsive">Login</button>
+          <button class="blogr-login--button-sign-up-responsive">Sign up</button>
+        </div>
+
+      </div>
+
+
+        
+
+
+      </div>
+
+      <div class="blogr-intro">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="blogr-intro--buttons">
+          <div class="button-1">
+            <button>Start for Free</button>
+          </div>
+          <div class="button-2">
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogr-info">
+      <div class="blogr-info-section--title">
+        <h2>Designed for the future</h2>
+      </div>
+    
+      <div class="blogr-info-section--box">
+
+        <div class="blogr-info-section--image--mobile">
+          <img src="./static/images/illustration-editor-mobile.svg" alt="">
+        </div>
+
+        <div class="blogr-info-section--description">
+          <div class="blogr-info-section-text-container">
+            <h4>
+              Introducing an extensible editor
+            </h4>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+            </p>
+          </div>
+
+          <div class="blogr-info-section-text-container">
+            <h4>
+              Robust content management
+            </h4>
+            <p>
+              Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            </p>
+          </div>
+          
+        </div>
+
+        <div class="blogr-info-section--image">
+          <img src="./static/images/illustration-editor-desktop.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="blogr-phones" class="blogr-phones-section">
+      
+        <div class="blogr-phones-image">
+          <img src="./static/images/illustration-phones.svg" alt="">
+        </div>
+
+        <div class="blogr-phones-text">
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      
+    </section>
+
+    <section id="blogr-laptop" class="blogr-laptop-section">
+      
+      
+        <div class="blogr-laptop-section--image">
+          <img src="./static/images/illustration-laptop-desktop.svg" alt="">
+        </div>
+  
+        <div class="blogr-laptop-section--text">
+          <div>
+            <h4>
+              Free, open, simple
+            </h4>
+            <p>
+              Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+  
+          <div>
+            <h4>
+              Powerful tooling
+            </h4>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+            </p>
+          </div>
+  
+        </div>
+    
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      Blogr
+    </div>
+    <div class="footer-menu">
+      <p>Product</p>
+      <ul>
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <p>Company</p>
+      <ul>
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+    <div class="footer-menu">
+      <p>Connect</p>
+      <ul>
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>LinkedIn</li>
+      </ul>
+    </div>
+  </footer>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Fernando Paredes Rios</a>.
+  </div>
+
+  <script src="./static/scripts/app.js"></script>
+</body>
+</html>
