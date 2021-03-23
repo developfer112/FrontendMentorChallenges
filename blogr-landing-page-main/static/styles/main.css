@@ -12,6 +12,10 @@ body{
      padding: 50px 100px;
 }
 
+.responsive{
+     display: none;
+}
+
 .blogr-menu-responsive-icon{
      display: none;
 }
