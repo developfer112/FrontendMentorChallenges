@@ -1,0 +1,118 @@
+:root{
+     /* Colors */
+     --primary-red:  #ff7a7a;
+     --primary-green: #38cc8c;
+     --accent-blue: #6055a5;
+     --dark-blue: #3e3c49;
+     --grayish-blue: #b9b6d3;
+     --white: #fff;
+ }
+
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ html{
+     font-size: 62.5%;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body{
+     background: var(--primary-red);
+     background-image: url("../images/bg-intro-mobile.png");
+ }
+
+ .main-section--title{
+     width: 100%;
+     min-width: 288px;
+     max-width: 900px;
+     height: 218px;
+     margin-top: 80px;
+     text-align: center;
+     align-self: center;
+ }
+
+ .main-section--title h1{
+     font-size: 2.6rem;
+     font-weight: bold;
+     line-height: 2.6rem;
+     color: var(--white);
+     padding: 0 30px;
+ }
+
+ .main-section--title p{
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 2.6rem;
+     color: var(--white);
+     margin: 30px 0;
+     text-align: center;
+     padding: 0 30px;
+ }
+
+ .main-section--info{
+     background: var(--accent-blue);
+     margin: 80px 30px 15px 30px;
+     padding: 15px;
+     border: none;
+     border-radius: 5px;
+ }
+
+ .main-section--info p{
+     font-size: 1.6rem;
+     color: var(--white);
+     text-align: center;
+     padding: 0 30px;
+ }
+
+ .main-section--info span{
+     font-weight: bold;
+ }
+
+.main-section--form{
+     width: 85%;
+     background: var(--white);
+     margin: 0 auto;
+     border: none;
+     border-radius: 5px;
+     padding: 20px 0;
+}
+
+.main-section--form div{
+     width: 90%;
+     margin: 0 auto;
+}
+
+.main-section--form input{
+     width: 100%;
+     padding: 15px;
+     margin: 10px 0;
+     border: 1px solid var(--grayish-blue);
+     border-radius: 5px;
+     color: var(--grayish-blue);
+     font-weight: bold;
+}
+
+.main-section--form input[type=submit]{
+     background: var(--primary-green);
+     border: none;
+     border-radius: 5px;
+     color: var(--white);
+}
+
+.main-section--form .input-checkbox{
+     display: grid;
+     grid-template-columns: 10% 80%;
+}
+
+.input-checkbox label{
+     color: var(--grayish-blue);
+     text-align: center;
+}
+
+.input-checkbox span{
+     color: var(--primary-red);
+     font-weight: bold;
+}
