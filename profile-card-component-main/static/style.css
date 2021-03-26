@@ -1,0 +1,107 @@
+:root{
+    /* Colors */
+    --dark-cyan:  hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background-color: var(--dark-cyan);
+    background-image: url("/images/bg-pattern-top.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main{
+    margin: 280px auto;
+}
+
+.main-card-section{
+    width: 90%;
+    margin: 0 auto;
+    min-width: 288px;
+    max-width: 375px;
+}
+
+.main-card--top{
+    background-color: var(--dark-cyan);
+    background-image: url("/images/bg-pattern-card.svg");
+    background-size: contain;
+    background-position: center;
+    height: 120px;
+    border-radius: 10px 10px 0px 0;
+}
+
+.main-card--bottom{
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.main-card--img{
+    height: auto;
+    position: relative;
+}
+
+.main-card--img img{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 50px);
+    border-radius: 100px;
+    border: 5px solid white;
+}
+
+.main-card--text{
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.main-card--text h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.main-card--text span{
+    font-weight: 400;
+}
+
+.main-card--text p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main-card--numbers{
+    border-top: 1px solid var(--dark-gray);
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.main-card--numbers div{
+    width: 33%;
+    padding: 15px 0;
+}
+
+.main-card--numbers p{
+    text-align: center;
+}
+
+.number{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
