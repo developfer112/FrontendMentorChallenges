@@ -38,7 +38,7 @@ main{
 
 .main-card--top{
     background-color: var(--dark-cyan);
-    background-image: url("./images/bg-pattern-card.svg");
+    background-image: url("/images/bg-pattern-card.svg");
     background-size: contain;
     background-position: center;
     height: 120px;
