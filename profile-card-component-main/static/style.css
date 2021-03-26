@@ -19,7 +19,7 @@ html{
 
 body{
     background-color: var(--dark-cyan);
-    background-image: url("/images/bg-pattern-top.svg");
+    background-image: url("../images/bg-pattern-top.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
