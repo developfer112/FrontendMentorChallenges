@@ -19,14 +19,21 @@ html{
 
 body{
     background-color: var(--dark-cyan);
-    background-image: url("../images/bg-pattern-top.svg");
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
     background-size: cover;
-    background-position: center;
+    /*background-position: center;
+    background-repeat: no-repeat; */
+    background-size: 70%, 70%;
+    background-position: -60% 420% , 170% -390%;
     background-repeat: no-repeat;
 }
 
 main{
-    margin: 280px auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-card-section{
@@ -105,3 +112,11 @@ main{
     font-weight: 700;
 }
 
+@media(min-width: 1440px){
+    body{
+        background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+        background-size: 70%, 70%;
+        background-position-x: -70%, 140%;
+        background-position-y: 200%, -120%;
+    }
+}
