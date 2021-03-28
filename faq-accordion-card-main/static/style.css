@@ -23,35 +23,53 @@ main{
 }
 
 .main-card-container{
-     width: 80%;
+     width: 90%;
      min-width: 288px;
-     max-width: 900px;
+     max-width: 400px;
      height: auto;
      margin: 0 auto;
      background-color: white;
      position: relative;
      border-radius: 10px;
-     /* display: flex; */
+     display: flex;
 }
 
 .main-card--img{
+     /* padding-top: 100px; */
+     /* position: absolute;
+     width: 80%;
+     top: -40px;
+     left: calc(50% - 45%);
+     margin: 0 auto; */
+}
+
+.main-card--img .mobile-img{
+     /* width: 100%; */
+     /* text-align: center; */
      position: absolute;
      width: 80%;
-     top: -90px;
+     top: -40px;
      left: calc(50% - 45%);
      margin: 0 auto;
 }
 
-.main-card--img img{
-     width: 100%;
-     text-align: center;
+.mobile-img{
+     display: block;
+}
+
+.desktop-img{
+     display: none;
 }
 
 .main-card--title{
+     padding-top: 70%;
+     padding-bottom: 15px;
+}
+
+.main-card--title h2{
      font-size: 3rem;
      font-weight: 700;
      text-align: center;
-     margin: 120px 0px 50px 0px;
 }
 
 .main-card--text{
@@ -73,26 +91,93 @@ main{
      font-size: 1.2rem;
      margin-top: 10px;
      display: none;
+     margin-bottom: 10px;
 }
 
-@media(min-width: 901px){
-     .main-card-container{
-          display: flex;
+@media(min-width: 1024px){
+     .main-card-container {
+          min-width: 348px;
+          max-width: 70%;
+          margin: 0 auto;
+          height: 60%;
      }
 
      .main-card--img{
           width: 50%;
           position: relative;
+          overflow: hidden;
      }
 
-     .main-card--img img {
-          width: 100%;
+
+     .mobile-img{
+          display: none;
+     }
+
+     .main-card--img .desktop-img{
           position: absolute;
-          top: calc(50% - 25%);
-          left: calc(50% - 95%);
+          width: 100%;
+          top: 30px;
+          left: calc(50% - 70%);
+          margin: 0 auto;
+     }
+
+     .desktop-img{
+          display: block;
+     }
+
+     .main-card--title{
+          padding-top: 15%;
+          padding-bottom: 5%;
+     }
+
+     .main-card--title h2{
+          text-align: left;
+          font-size: 2rem;
      }
 
      .main-card--text{
           width: 50%;
+     }
+
+     .desglosable{
+          width: 80%;
+     }
+
+     .pregunta{
+          font-size: 1.1rem;
+     }
+
+     .respuesta{
+          font-size: 1.1rem;
+     }
+}
+
+@media(min-width: 1440px){
+     .main-card-container {
+          min-width: 348px;
+          max-width: 70%;
+          margin: 0 auto;
+          height: 75%;
+     }
+
+     .main-card--img .desktop-img{
+          position: absolute;
+          width: 100%;
+          top: 60px;
+          left: calc(50% - 70%);
+          margin: 0 auto;
+     }
+
+     .main-card--title h2{
+          text-align: left;
+          font-size: 3.5rem;
+     }
+
+     .pregunta{
+          font-size: 1.8rem;
+     }
+
+     .respuesta{
+          font-size: 1.8rem;
      }
 }
